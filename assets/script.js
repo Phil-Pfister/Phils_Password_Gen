@@ -1,6 +1,6 @@
 // My code below
 function generatePassword() {
-  //answer prompts
+  // variables based on answer to prompts
   var specialCharacters = confirm("Would you like your password to include Special Characters?");
   var capitalLetters = confirm("Would you like your password to contain capital letters?");
   var numbers = confirm("Would you like your password to contain numbers?");
@@ -11,7 +11,7 @@ function generatePassword() {
   var num = "0123456789"
   var symbols = "!#$%&()*+,-./:;<=>?@[]^_`{|}~";
 
-  // function to weed out variables
+  // function to weed out variables using string.concat to combine variables
   function charSet1() {
         // all cases are true
     if (specialCharacters && capitalLetters && numbers) {
@@ -52,12 +52,13 @@ function generatePassword() {
   var charSetPrime = charSet1();
   var charSet = charSetPrime.repeat(5);
   
-  // converts string to an array and randomizes
+  // converts string to an array 
   var charSetArray = charSet.split("");
   
+  // randomizes the array - credit to stack overflow for Durstenfeld shuffle algorithm - see README
   function shuffleArray(array) {
-      for (let i = array.length - 1; i > 0; i--) {
-          const j = Math.floor(Math.random() * (i + 1));
+      for (var i = array.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
           [array[i], array[j]] = [array[j], array[i]];
       }
   }

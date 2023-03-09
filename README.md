@@ -8,18 +8,18 @@ When you open the page and click the "generate password" button you are asked to
 
 ## Installation
 
-Navigate to the website: [https://phil-pfister.github.io/Phillip_Pfister_Portfoilo/](https://phil-pfister.github.io/Phils_Password_Gen) 
+Navigate to the website: [https://phil-pfister.github.io/Phils_Password_gen/](https://phil-pfister.github.io/Phils_Password_Gen) 
 
 ## Credits
 
-I used what I learned in the classroom as well as information from MDN docs and W3 schools websites as well as Stack Overflow. 
+I used what I learned in the classroom as well as information from MDN docs and W3 schools websites. I also consulted Stack Overflow and learned about the Durstenfeld Shuffle algorithum. 
 I also recieved helpful information from my instructor Brandon Gatlin.
 
 [MDN](https://developer.mozilla.org/en-US/)
 
 [w3school](https://www.w3schools.com/)
 
-[StackOverflow](https://stackoverflow.com/)
+[StackOverflow](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array)
 
 ## Images
 
