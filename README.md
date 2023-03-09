@@ -24,10 +24,11 @@ I also recieved helpful information from my instructor Brandon Gatlin.
 ## Images
 
 The pages looks like this:
-![PasswordGen1](./assets/images/password1.png)
-![PasswordGen2](./assets/images/passport2.png)
-![PasswordGen3](./assets/images/passport3.png)
-![PasswordGen4](./assets/images/passport4.png)
+
+![PasswordGen1](./assets/images/password1.jpeg)
+![PasswordGen2](./assets/images/passport2.jpeg)
+![PasswordGen3](./assets/images/passport3.jpeg)
+![PasswordGen4](./assets/images/passport4.jpg)
 
 ## License
 

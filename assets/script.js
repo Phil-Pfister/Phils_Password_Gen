@@ -4,7 +4,7 @@ function generatePassword() {
   var specialCharacters = confirm("Would you like your password to include Special Characters?");
   var capitalLetters = confirm("Would you like your password to contain capital letters?");
   var numbers = confirm("Would you like your password to contain numbers?");
-  var sizeOfPassword = prompt("How many characters would you like your password to contain? Enter a number between 8 and 18.");
+  var sizeOfPassword = prompt("How many characters would you like your password to contain? Enter a number between 8 and 128.");
   // variables for password
   var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
   var lower = "abcdefghijklmnopqrstuvwxyz"
@@ -70,7 +70,7 @@ function generatePassword() {
   // converts back to a string
   shuffle = charSetArray.slice(0,sizeOfPassword).toString();
   shuffle = shuffle.replaceAll(',', '');
-  
+
   // returns the new string to be used as the value of password
   return(shuffle);
 }
