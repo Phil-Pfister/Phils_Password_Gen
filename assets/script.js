@@ -1,6 +1,7 @@
 // My code below
 function generatePassword() {
   // variables based on answer to prompts
+  var lowerCase = confirm("Would you like to include lowercase letters in your password?");
   var specialCharacters = confirm("Would you like your password to include Special Characters?");
   var capitalLetters = confirm("Would you like your password to contain capital letters?");
   var numbers = confirm("Would you like your password to contain numbers?");
@@ -8,43 +9,66 @@ function generatePassword() {
   // variables for password
   var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
   var lower = "abcdefghijklmnopqrstuvwxyz"
-  var num = "0123456789"
+  var num = "012345678901234567890123456789"
   var symbols = "!#$%&()*+,-./:;<=>?@[]^_`{|}~";
 
   // function to weed out variables using string.concat to combine variables
   function charSet1() {
         // all cases are true
-    if (specialCharacters && capitalLetters && numbers) {
+    if (lowerCase && specialCharacters && capitalLetters && numbers) {
           return lower.concat(upper, num, symbols);
           
         // no numbers
-        } else if (specialCharacters && capitalLetters) {
+        } else if (lowerCase && specialCharacters && capitalLetters) {
           return lower.concat(num, symbols);
           
         // no symbols 
-        } else if (capitalLetters && numbers) {
+        } else if (lowerCase && capitalLetters && numbers) {
           return lower.concat(upper, num);
           
           // no uppercase
-        } else if (specialCharacters && numbers) {
+        } else if (lowerCase && specialCharacters && numbers) {
           return lower.concat(symbols, num);
           
           // only symbols and lowercase
-        } else if (specialCharacters) {
+        } else if (lowerCase && specialCharacters) {
           return lower.concat(symbols);
           
           //only uppercase and lowercase
-        } else if (capitalLetters) {
+        } else if (lowerCase && capitalLetters) {
             return lower.concat(upper)
           
             // only lowercase and numbers
-        } else if (numbers) {
+        } else if (lowerCase && numbers) {
           return lower.concat(num);
+            // no lowercase
+        } else if (capitalLetters && numbers && specialCharacters) {
+          return upper.concat(num, symbols);
+            // no numbers
+        } else if (capitalLetters && specialCharacters) {
+          return upper.concat(capitalLetters, symbols);
+            // only uppercase and numbers
+        } else if (capitalLetters && numbers) {
+          return upper.concat(num);
+            // only numbers and special
+        } else if (numbers && specialCharacters) {
+          return num.concat(symbols);
+            // only uppercase
+        }else if (capitalLetters) {
+          return upper;
+            // only numbers
+        } else if (numbers) {
+          return num;
 
-          // only lowercase
-        } else {
+        } else if (specialCharacters) {
+          return symbols;
+            // only lowercase
+        } else if (lowerCase) {
           return lower;
-          
+          // if no value returned
+        } else {
+          alert("You have to choose at least one option, please try again");
+          generatePassword();
         }
   }
 
