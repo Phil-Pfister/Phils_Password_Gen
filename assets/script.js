@@ -14,8 +14,11 @@ function generatePassword() {
 
   // function to weed out variables using string.concat to combine variables
   function charSet1() {
-        // all cases are true
-    if (lowerCase && specialCharacters && capitalLetters && numbers) {
+        // Password in not correct length
+    if (sizeOfPassword<8 || sizeOfPassword>128) {
+        alert("You must pick a length between 8 and 128 characters. Please try again!");
+        // Password includes all types of charaters
+        } else if (lowerCase && specialCharacters && capitalLetters && numbers) {
           return lower.concat(upper, num, symbols);
           
         // no numbers
