@@ -10,7 +10,7 @@ function generatePassword() {
   var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
   var lower = "abcdefghijklmnopqrstuvwxyz"
   var num = "012345678901234567890123456789"
-  var symbols = "!#$%&()*+,-./:;<=>?@[]^_`{|}~";
+  var symbols = "!#$%&()*+-./:;<=>?@[]^_`{|}~";
 
   // function to weed out variables using string.concat to combine variables
   function charSet1() {
