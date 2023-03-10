@@ -92,7 +92,7 @@ function generatePassword() {
   var shuffle = charSetArray;
 
   // reduces the size of the array to the length inputted by user and 
-  // converts back to a string
+  // converts back to a string and removes commas
   shuffle = charSetArray.slice(0,sizeOfPassword).toString();
   shuffle = shuffle.replaceAll(',', '');
 
