@@ -8,7 +8,7 @@ When you open the page and click the "generate password" button you are asked to
 
 ## Installation
 
-Navigate to the website: [https://phil-pfister.github.io/Phils_Password_gen/](https://phil-pfister.github.io/Phils_Password_Gen) 
+Navigate to the website: [https://phil-pfister.github.io/Phils_Password_Gen/](https://phil-pfister.github.io/Phils_Password_Gen) 
 
 ## Credits
 

@@ -68,7 +68,7 @@ function generatePassword() {
           // if no value returned
         } else {
           alert("You have to choose at least one option, please try again");
-          generatePassword();
+          
         }
   }
 
